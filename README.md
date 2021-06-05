@@ -8,7 +8,7 @@ I'm new to writing neovim plugins and I'm new to lua too, so now guarantees shal
 
 Packer:
 
-```
+```Lua
 -- mkdir
 use {
   'jghauser/mkdir.nvim',
