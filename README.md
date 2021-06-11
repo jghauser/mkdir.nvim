@@ -1,6 +1,6 @@
 # mkdir.nvim
 
-A `mkdir -p` plugin for neovim. When saving a file, it will create missing directories automatically (just like `mkdir -p`).
+A plugin for neovim that automatically creates missing directories on saving a file (similar to `mkdir -p` on linux).
 
 ## Installation
 
