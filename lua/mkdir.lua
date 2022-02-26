@@ -15,7 +15,11 @@ function M.run()
   end
 end
 
-cmd([[autocmd!]])
-cmd([[autocmd BufWritePre * lua require('mkdir').run()]])
+cmd([[
+  augroup MkdirRun
+  autocmd!
+  autocmd BufWritePre * lua require('mkdir').run()
+  augroup END
+]])
 
 return M
