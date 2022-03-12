@@ -11,10 +11,7 @@ Packer:
 ```lua
 -- mkdir
 use {
-  'jghauser/mkdir.nvim',
-  config = function()
-    require('mkdir')
-  end
+  'jghauser/mkdir.nvim'
 }
 ```
 

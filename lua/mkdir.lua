@@ -3,7 +3,6 @@
 --
 
 local fn = vim.fn
-local cmd = vim.cmd
 
 local M = {}
 
@@ -14,12 +13,5 @@ function M.run()
     fn.mkdir(dir, 'p')
   end
 end
-
-cmd([[
-  augroup MkdirRun
-  autocmd!
-  autocmd BufWritePre * lua require('mkdir').run()
-  augroup END
-]])
 
 return M
